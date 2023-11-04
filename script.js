@@ -204,11 +204,27 @@ let menos = document.getElementById("menos");
 function mas11() {
     let textPlus = document.getElementById("textPlus");
     textPlus.style.fontSize = parseInt(getComputedStyle(textPlus, '').fontSize) + 2 + 'px';
-   }
+}
 function menos1() {
     let textPlus = document.getElementById("textPlus");
     textPlus.style.fontSize = parseInt(getComputedStyle(textPlus, '').fontSize) - 2 + 'px'
-   }
+}
 mas1.addEventListener("click", mas11);
-menos.addEventListener("click",menos1);
+menos.addEventListener("click", menos1);
+
+// 3-Tarjetas clickeables: Genera una serie de tarjetas en el DOM, cada una con un
+//     contenido diferente. Permite que el usuario haga clic en una tarjeta para expandirla y
+//     mostrar más detalles.
+
+let cards = document.querySelectorAll(".card-holder")
+
+cards.forEach((item) => {
+    function output() {
+        console.log(this.textContent);
+        this.style.width= "200px"
+        this.style.height= "300px"
+       
+    }
+   item.addEventListener("click", output)
+});
 

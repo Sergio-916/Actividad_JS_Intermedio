@@ -34,3 +34,22 @@ position: absolute;
 #increase{
     font-size: 14px;
 }
+
+.cards-holder{
+    max-width: 600px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+.card-holder{
+    display: flex;
+    width: 150px;
+    height: 200px;
+background-color: bisque;
+margin: 10px;
+flex-wrap: wrap;
+}
