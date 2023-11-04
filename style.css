@@ -1,0 +1,36 @@
+
+.carousel {
+    width: 800px;
+    height: 500px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.arrows {
+display: flex;
+position: absolute;
+    width: 800px;
+        justify-content: space-between;
+    z-index: 1;
+    opacity: 0.6;
+}
+.fa-arrow-left {
+    background-color: #fff;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+
+   
+}
+.fa-arrow-right{
+    background-color: #fff;
+    border-radius: 015px 0 0 15px;
+    cursor: pointer;
+}
+
+#increase{
+    font-size: 14px;
+}

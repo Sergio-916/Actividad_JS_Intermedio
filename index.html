@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Tarea Sergey Shpak</h1>
+    <div>1 Escribe una función que determine si un número es primo o no</div>
+    <input type="text" id="isprime" placeholder="input number">
+    <button id="btn" onclick="isPrime()">Check Prime</button>
+    <div id="output"></div>
+
+    <br>
+    <br>
+    <div>2-Operaciones de matriz: Implementa una función que realice operaciones de matriz,
+        como suma, resta o multiplicación, en dos matrices dadas.</div>
+  
+        <input type="text" id="text1" placeholder="input array 1">
+        <input type="text" id="text2" placeholder="input array 2"><br>
+        <button onclick="addition()">Operation +</button>
+        <button onclick="substraction()">Operation -</button>
+        <button onclick="multiplication()">Operation *</button>
+        <button onclick="division()">Operation /</button> 
+ 
+    <div id="arrayRes"></div>
+    <br><br>
+
+    <div>3-Suma de números en un rango: Escribe una función que calcule la suma de todos
+        los números en un rango dado (por ejemplo, de a a b).</div>
+    <input type="text" id="a" placeholder="input starting range">
+    <input type="text" id="b" placeholder="input finishing range">
+    <button id="myBtn" onclick="sumRange()">Result</button>
+    <div id="sum"></div>
+
+    <br><br>
+    <div> 4-Contar vocales: Crea una función que cuente el número de vocales en una cadena
+        de texto</div>
+    <input type="text" id="vocales" placeholder="input string">
+    <button onclick="vocales()">Result</button>
+    <div id="res"></div>
+
+    <br><br>
+    <div>5-De una matriz devuelve una matriz con elementos únicos.(sin duplicados).
+        Por eje: [“Sofia”, “Maria”, “Pedro, “Sofia”] → [“Sofia”, “Maria”, “Pedro”]</div>
+    <input type="text" id="inputUnique" placeholder="input array">
+    <button onclick="uniqueArr()">Result</button>
+    <div id="unArr"></div>
+
+    <br><br>
+    <div>6-Crea una función que invierta una cadena de texto sin usar reverse()
+    </div>
+    <input type="text" id="reverse1" placeholder="input string">
+    <button onclick="reverseString()">Result</button>
+    <div id="res1"></div>
+    <br><br>
+    <hr>
+
+    <h3>1-Generar un carrusel de imágenes: Utiliza el DOM para crear un carrusel de
+        imágenes que permite al usuario avanzar o retroceder entre imágenes.</h3>
+    <div class="carousel">
+        <img src="images/bike4.jpg" alt="" id="pictures" width="100%" height="100%">
+        <div class="arrows">
+            <i class="fa-solid fa-arrow-left" style="font-size: 40px;" onclick="clickLeft()"></i>
+            <i class="fa-solid fa-arrow-right" style="font-size: 40px;" onclick="clickRight()"></i>
+        </div>
+    </div>
+<br><br>
+<div>2-Texto que se lee más: Crea un botón que, al hacer clic, cambia el tamaño del texto
+    de un elemento en el DOM para que sea más grande o más pequeño.</div>
+    <br>
+    <div id="textPlus">This text can be Bigger or Smaller</div> </div>
+    <button id="mas1">Bigger</button>
+    <button id="menos">Smaller</button>
+<br><br>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
