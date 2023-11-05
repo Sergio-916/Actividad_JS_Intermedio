@@ -220,9 +220,8 @@ let cards = document.querySelectorAll(".card-holder")
 
 cards.forEach((item) => {
     function output() {
-        console.log(this.textContent)
-        item.classList.toggle("card-holder-big")
-        item.children.desc.classList.toggle("desc-visible")
+        this.classList.toggle("card-holder-big")
+        this.children.desc.classList.toggle("desc-visible")
     }
     item.addEventListener("click", output)
 });
