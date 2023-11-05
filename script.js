@@ -220,11 +220,10 @@ let cards = document.querySelectorAll(".card-holder")
 
 cards.forEach((item) => {
     function output() {
-        console.log(this.textContent);
-        this.style.width= "200px"
-        this.style.height= "300px"
-       
+        console.log(this.textContent)
+        item.classList.toggle("card-holder-big")
+        item.children.desc.classList.toggle("desc-visible")
     }
-   item.addEventListener("click", output)
+    item.addEventListener("click", output)
 });
 
